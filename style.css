@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    background-image: url('./images/ukraine-background.jpg'); /* Путь к изображению фона */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+h1 {
+    font-size: 28px;
+    margin: 0;
+}
+p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+th, td {
+    font-size: 21px;
+    background-color: #070d0f;
+    color: rgb(224, 230, 230);
+    border: 1px solid #dcdfd8;
+    box-shadow: 0 0 15px rgba(226, 11, 11, 0.838);
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(178,193,13,1) 35%, rgba(0,212,255,1) 100%);
+    color: rgb(237, 17, 17);
+}
+img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    display:block;
+    margin: 0 auto;
+}
+@media (max-width:600px) {
+    body {
+        background-size: cover;
+        background-attachment: fixed;
+        max-height: 200vh;
+    }
+    h1, h2, p {
+        color:#fff;
+        text-shadow: 0 0 5px #232222, 0 0 10px #fff, 0 0 20px #ff4800, 0 0 30px #7300ff, 0 0 40px #0055ff, 0 0 50px #ff5900, 0 0 75px #f5ecf5;
+    }
+    h1 {
+        font-size:18px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14px;
+    }
+table, thead, tbody, th, td, tr {
+    padding: 10px;
+    display:block;
+}
+td {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+th {
+    display: none;
+}
+}
